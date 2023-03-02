@@ -13,22 +13,8 @@
 #define RAISE   2
 
 
-/ {
-          macros {
-                screen_shot_macro: screen_shot_macro{
-                label = "screenshot";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                        = <&macro_press     &kp LCTRL>
-                        , <&macro_press     &kp LCMD>
-                        , <&macro_press     &kp LSHIFT>
-                        , <&macro_tap       &kp N4>
-                        , <&macro_release   &kp LSHIFT>
-                        , <&macro_release   &kp LCMD>
-                        , <&macro_release   &kp LCTRL>;
-                };
-          };
+/ {    
+          
         behaviors {
                 tp: tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
@@ -40,7 +26,7 @@
                 bindings = <&kp>, <&kp>;
                 };  
               
-    };
+          };
               
         
 
@@ -82,7 +68,7 @@
 //                    | GUI |     | SPC |   | ENT |     | Atp |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MUtpIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp F12   &screen_shot_macro &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LCTRL &kp F12   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RAtp
                         >;
