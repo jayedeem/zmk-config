@@ -24,20 +24,7 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
                 };  
-                macros {
-                screen_shot_macro: screen_shot_macro{
-                label = "screenshot";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                        = <&macro_press     &kp LCTRL>
-                        , <&macro_press     &kp LCMD>
-                        , <&macro_press     &kp LSHIFT>
-                        , <&macro_tap       &kp N4>
-                        , <&macro_release   &kp LSHIFT>
-                        , <&macro_release   &kp LCMD>
-                        , <&macro_release   &kp LCTRL>;
-                };
+              
     };
               
         };
@@ -53,7 +40,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
-   &kp LCTRL &tp LGUI A &tp LCTL S &tp LALT D &tp LSHIFT F &kp G   &kp H &tp RSHIFT J  &lt RALT K     &lt RCTL L   &lt RGUI SEMI &kp SQT
+   &kp LCTRL &tp LGUI A &tp LCTL S &tp LALT D &tp LSHIFT F &kp G   &kp H &tp RSHIFT J  &tp RALT K     &tp RCTL L   &tp RGUI SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &kp LGUI &mo 1 &lt 1 RET   &lt 2 SPACE &kp BACKSPACE &mo 2
                         >;
