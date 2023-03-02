@@ -14,6 +14,7 @@
 
 
 / {
+<<<<<<< HEAD
         behaviors {
           tp: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
@@ -35,6 +36,8 @@
             hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
         };
         };
+=======
+>>>>>>> parent of c70edff (refactor: added MTS and LTS)
         keymap {
                 compatible = "zmk,keymap";
 
@@ -48,7 +51,11 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &hrm LGUI A &hrm LCTL S &hrm LALT D &hrm LSHTF &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+<<<<<<< HEAD
                   &kp LGUI &mo 1 &kp RET   &kp SPACE &kp BSPC &mo 2
+=======
+                  &kp LGUI &mo 1 &kp RET   &kp SPACE &mo 2 &kp BSPC
+>>>>>>> parent of c70edff (refactor: added MTS and LTS)
                         >;
                 };
                 lower_layer {
