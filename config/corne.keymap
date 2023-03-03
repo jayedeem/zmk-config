@@ -10,6 +10,7 @@
 
 
 / {
+        // macros
       macros {
         screen_shot: screen_shot {
             label = "screen_shot";
@@ -22,7 +23,9 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp LGUI>
                 ;
-        };
+           };
+      };
+        // behaviors
         behaviors {
           tp: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
@@ -32,11 +35,9 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-          }; 
-          }; 
-        };
-        
-    };
+            }; 
+          };         
+    
         keymap {
                 compatible = "zmk,keymap";
 
