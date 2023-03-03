@@ -55,7 +55,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
-   &kp LCTRL &tp LGUI A &tp LCTL S &tp LATL D &tp LSHIFT F &kp G   &kp H &tp RSHIFT J  &tp RALT K   &tp RCTL L   &tp RGUI SEMI &kp SQT
+   &kp LCTRL &tp LGUI A &tp LCTL S &tp LATL D &tp LSHIFT F &kp G   &kp H &kp J  &kp K  &kp L &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &kp LGUI &mo 1 &tp 1 RET   &tp 2 SPACE &kp BACKSPACE &mo 2
                         >;
