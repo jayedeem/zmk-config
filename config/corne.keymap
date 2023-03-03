@@ -39,14 +39,14 @@
         copy: copy {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LG(C)>;
+            bindings = <&kp>, <&kp>;
         };
          paste: paste {
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp LG(V)>;
         };
@@ -72,7 +72,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &tp LGUI A &tp LCTRL S &tp LALT D &tp LSHFT F &kp G   &kp H &tp RSHFT J  &tp RALT K &tp RCTRL L &tp RGUI SEMI &kp SQT
-   &kp LSHFT &kp Z &cut &copy &paste &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LSHFT &kp Z &cut C LG(C) &copy &paste &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &lt 1 RET   &lt 2 SPACE &kp BACKSPACE &kp RALT
                         >;
                 };
