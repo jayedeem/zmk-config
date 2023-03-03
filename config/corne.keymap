@@ -46,7 +46,7 @@
          paste: paste {
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp LG(V)>;
         };
