@@ -38,10 +38,10 @@
             }; 
         copy: copy {
             compatible = "zmk,behavior-tap-dance";
-            label = "COPY_DANCE";
+            label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LGUI(C)>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
 
           };         
