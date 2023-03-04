@@ -62,7 +62,7 @@
         compatible = "zmk,combos";
                 combo_esc {
                 timeout-ms = <50>;
-                key-positions = <17 20>;
+                key-positions = <0 1>;
                 bindings = <&caps_word>;
                 };
     };       
@@ -70,7 +70,8 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                alphas_layer {
+                        label = "alphas"
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -80,10 +81,11 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &tp LGUI A &tp LCTRL S &tp LALT D &tp LSHFT F &kp G   &kp H &tp RSHFT J  &tp RALT K &tp RCTRL L &tp RGUI SEMI &kp SQT
    &kp LSHFT &kp Z &cut &copy &paste &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &lt 1 RET   &lt 2 SPACE &kp BACKSPACE &kp RALT
+                  &kp LGUI MO(NUM) &lt NUM RET   &lt SYM SPACE &kp BACKSPACE &kp RALT
                         >;
                 };
-                lower_layer {
+                numeric_layer {
+                        label = "NUM"
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -97,7 +99,8 @@
                         >;
                 };
 
-                raise_layer {
+                symbol_layer {
+                        label = "SYM"
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
