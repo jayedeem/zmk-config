@@ -1,0 +1,19 @@
+/* 
+#define BASE 0
+#define NUM 1 
+#define SYM 2
+#define SET 3 */
+
+
+compatible = "zmk,combos"
+ 
+// layer alphas, numerics, symbols, settings
+
+#define COMBOS(NAME, BINDINGS, KEYPOS, LAYERS) \
+    combo_##NAME { \
+       bindings = <BINDINGS>; \
+       key-positions = <KEYPOS>; \
+       layers = <LAYERS>; \
+    }; 
+
+COMBOS(caps_word, &caps_word, 0 1, BASE)

@@ -72,8 +72,8 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                alphas_layer {
-                        label = "ALPHAS";
+                base_layer {
+                        label = "BASE";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
