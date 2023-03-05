@@ -5,7 +5,6 @@
 #define SET 3 */
 
 
-compatible = "zmk,combos";
  
 // layer alphas, numerics, symbols, settings
 
@@ -16,4 +15,4 @@ compatible = "zmk,combos";
        layers = <LAYERS>; \
     }; 
 
-COMBOS(caps_word, &caps_word, 0 1, BASE) 
+
